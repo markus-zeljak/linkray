@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a problem with Linkray.
+title: "[Bug] "
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Linkray version, Cavalry version, and Windows or macOS version.
+      placeholder: "Linkray 1.0.1 / Cavalry 2.8.0 / Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: array-type
+    attributes:
+      label: Array type
+      options:
+        - String Array
+        - Value Array
+        - Color Array
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the entry count and a small example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Screenshots and relevant JavaScript Console messages help.
+    validations:
+      required: true
